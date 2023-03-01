@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=PT+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'PT Mono', monospace;
+  color: white;
+}
+input {
+  background-color: #003b68;
+  border: solid 2px #003b68;
+  padding: 6px;
+}
+
+button {
+  background-color: #0087ee;
+  border: solid 2px #003b68;
+  padding: 10px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.round {
+  font-family: 'Comfortaa', cursive;
+}
+
+button:disabled {
+  background-color: #3d5160;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #0071b2 0%, #004880 100%);
+  /* justify-content: center; */
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+main > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 7vw;
+  /* text-align: center; */
+}
+
+main > div.right > img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.right > span{
+  font-size: 32px;
+}
+
+main > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main > div > div > button {
+  width: 100%;
+}
+.balances {
+  display: flex;
+}
+.balances > .l {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.balances > .r {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
