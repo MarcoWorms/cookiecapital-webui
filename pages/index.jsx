@@ -187,12 +187,10 @@ const Home   = () => {
                           <span onClick={() => { setToStake(String(yvWFTMBalance && String(ethers.utils.formatUnits(yvWFTMBalance)))) }}>{yvWFTMBalance && Number(ethers.utils.formatUnits(yvWFTMBalance)).toFixed(10)}</span> 
                         </div>
                         <div className="r">
-                          <span className='round'>yvWFTM Staked</span>
+                          <span className='round'>Staked</span>
                           <span>{stakedBalance && Number(ethers.utils.formatUnits(stakedBalance)).toFixed(10)}</span>
                         </div>
                       </div>
-                      <br />
-                      <br />
                       <input type="number" placeholder="amount to stake" onChange={e => setToStake(e.target.value)} value={toStake}/>
                       <div>
                         {/* <button disabled={true} onClick={() => {}}>
