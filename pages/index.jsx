@@ -39,7 +39,7 @@ const Home   = () => {
     }
     animate();
     return () => cancelAnimationFrame(animationFrame);
-  }, [stakedBalance])
+  }, [stakedBalance, lastStaked])
 
   const { data: _cookiesBalance } = useContractRead({
     address: cookieCapitalAddress,
@@ -210,7 +210,7 @@ const Home   = () => {
                 <span style={{fontSize: 20}}><span className='round'>Cookie Power: </span>{1000 + Number(cookiePower?.toString())}</span>
                 <br />
                 <span className='round' style={{fontSize: 16}}>Baking {
-                  (1000 + Number(cookiePower?.toString())) * Number(ethers.utils.formatUnits(stakedBalance)).toFixed(0)
+                  (1000 + Number(cookiePower?.toString())) * (stakedBalance ? Number(ethers.utils.formatUnits(stakedBalance)) : 0).toFixed(0)
                 } cookies each hour</span>
                 <br />
                 <br />
