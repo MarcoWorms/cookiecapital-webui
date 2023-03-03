@@ -18,7 +18,7 @@ const Home   = () => {
   const [toEat, setToEat] = React.useState('0')
   const [debouncedToEat] = useDebounce(toEat, 500)
 
-  const cookieCapitalAddress = '0xcF0CD547E9d1a7C865F81CeB9F12e0D9fFA99C88'
+  const cookieCapitalAddress = '0xfaCa84EE0cdF782df41c30fAc7a6aD9192f9E760'
   const yvFtmAddress = '0x0dec85e74a92c52b7f708c4b10207d9560cefaf0'
 
   const [stakedBalance, set_stakedBalance] = React.useState('0')
@@ -200,6 +200,7 @@ const Home   = () => {
                           Stake yvWFTM
                         </button>
                       </div>
+                      <a style={{textAlign:'center', fontSize: 12, marginTop: 6}}href="https://yearn.finance/vaults/250/0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0">What is yvWFTM?</a>
                     </>
                   )
                 }
